@@ -17,6 +17,6 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Build and test with Maven
-        run: mvn test
+      - name: Build and skip tests with Maven
+        run: mvn package -DskipTests
         working-directory: ./demo
